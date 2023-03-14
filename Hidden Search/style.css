@@ -1,0 +1,35 @@
+*/{
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.search{
+    position: relative;
+}
+.search input{
+    /* display:none; */
+    width: 30px;
+    height: 40px;
+    /* border-radius: 10%; */
+    border: 0;
+    transition: width 0.3s ease;
+}
+.search button{
+    position: absolute;
+    height:30px ;
+    right: 2px;
+    top: 7px;
+}
+.search.active input{
+     width:194px;
+     transition: width 0.3s ease;
+     /* border-radius: 20%; */
+}
+.search.active button{
+    transform: translateX(0);
+}
